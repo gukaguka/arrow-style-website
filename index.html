@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CodePen - Easy CSS Page/Slide Transitions</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:700,300">
+  <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+ <!-- jQuery library -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+
+<div class='easytransitions'>
+  <div class='easytransitions_transition'>
+    <div class='div easytransitions_transition__part-1 none'></div>
+    <div class='div easytransitions_transition__part-2 none'></div>
+    <div class='div easytransitions_transition__part-3 none'></div>
+    <div class='div easytransitions_transition__part-4 none'></div>
+    <div class='div easytransitions_transition__part-5 none'></div>
+    <div class='div easytransitions_transition__part-6 none'></div>
+    <div class='div easytransitions_transition__part-7 none'></div>
+    <div class='div easytransitions_transition__part-8 none'></div>
+  </div>
+  <div class='easytransitions_navigation'>
+    <div class='easytransitions_navigation__left'>
+      <i><img src="fast-forward-double-right-arrows-symbol.png" 
+        style="width: 15px; height: 15px; transform: scaleX(-1);"></i>
+    </div>
+    <div class='easytransitions_navigation__right'>
+      <i><img src="fast-forward-double-right-arrows-symbol.png" style="width: 15px; height: 15px;"></i>
+    </div>
+  </div>
+
+
+
+
+
+
+  <section class='active_slide' data-transition='none'>
+    <div class='center'>
+      <div class='hero-container'>
+     <video src='video-2.mp4' autoplay loop muted></video>
+     <h1 class='put-over'>Heat-Resistent Termo-Isolated</h1>
+     <h1 class='put-over'>High-Tech Costume</h1>
+    </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+  <section data-transition='split_diagonal'>
+    <div class='center' style="display: flex; justify-content : center">
+<div class='walkthrough show reveal'>
+  <div class='walkthrough-pagination'>
+    <a class='dot active'></a>
+    <a class='dot'></a>
+    <a class='dot'></a>
+    <a class='dot'></a>
+    <a class='dot'></a>
+  </div>
+  <div class='walkthrough-body'>
+    <ul class='screens animate'>
+      <li class='screen active'>
+        <div>
+          <img class='logo' src="800-805-Structural-Firefighter-Suit.jpg" >
+        </div>
+        <h3>
+          Product 
+          <br>Info</br>
+        </h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+      </li>
+      <li class='screen'>
+        <div >
+          <img class='icon logo' src="pic2.jpg" >
+        </div>
+        <h3>
+          New
+          <br>Features</br>
+        </h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+      </li>
+      <li class='screen'>
+        <div>
+          <img class='icon' >
+        </div>
+        <h3>
+          Challenges
+          <br>and Analitics</br>
+        </h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+      </li>
+      <li class='screen'>
+        <div>
+          <img class='icon' >
+        </div>
+        <h3>
+          Something
+          <br>and Something Else</br>
+        </h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+      </li>
+      <li class='screen'>
+        <div>
+          <img class='icon'>
+        </div>
+        <h3>
+          BlaBlaBla
+          <br>About</br>
+        </h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+      </li>
+    </ul>
+    <button class='prev-screen'>
+      <i class='icon-angle-left'></i>
+    </button>
+    <button class='next-screen'>
+      <i class='icon-angle-right'></i>
+    </button>
+  </div>
+</div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <section data-transition='split_diagonal_alt'>
+    <div class='center' style="display: flex; justify-content : center;" >
+      <div style='width: 60%; display: flex; justify-content: space-evenly;'>
+    <div class='my-card'>
+      <img src="download.jpg" alt="" class="my-card-img">
+      <div class="my-card-body">
+        <h4 class="my-card-title">Fullname</h4>
+        <h5>CTO Technology Officer </h5>
+        <a href="" class="btn btn-outline-light border-line">Follow >></a>
+      </div>
+    </div>
+     <div class='my-card'>
+      <img src="download.jpg" alt="" class="my-card-img">
+      <div class="my-card-body">
+        <h4 class="my-card-title">Fullname</h4>
+        <h5>CTO Technology Officer </h5>
+        <a href="" class="btn btn-outline-light border-line">Follow >></a>
+      </div>
+    </div>
+     <div class='my-card'>
+      <img src="download.jpg" alt="" class="my-card-img">
+      <div class="my-card-body">
+        <h4 class="my-card-title">Fullname</h4>
+        <h5>CTO Technology Officer </h5>
+        <a href="" class="btn btn-outline-light border-line">Follow >></a>
+      </div>
+    </div>
+    </div>
+  </div>
+  </section>
+
+
+
+
+
+
+
+
+  <section data-transition='wipe_bottom'>
+    <div class='center'>
+      <h1>contact us</h1>
+      <a class='follow' href='' target='_blank'>
+        <i class="icon ion-social-codepen-outline"></i> <span>facebook</span>
+      </a>
+    </div>
+  </section>
+</div>
+ <!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script  src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</body>
+</html>
